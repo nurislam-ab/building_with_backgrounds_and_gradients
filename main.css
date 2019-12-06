@@ -1,4 +1,4 @@
-@font-face { font-family: Roboto; src: url('fonts/Roboto/Roboto-Regular.ttf'); }
+@font-face { font-family: 'Roboto' ; src: url('fonts/Roboto/Roboto-Regular.ttf'); }
 @font-face { font-family: Montserrat; src: url('fonts/Montserrat/Montserrat-Regular.ttf');}
 @font-face { font-family: 'Montserrat Thin'; src: url('fonts/Montserrat/Montserrat-Thin.ttf');}
 @font-face { font-family: 'OpenSans Light'; src: url('fonts/Open_Sans/OpenSans-Light.ttf');}
@@ -26,7 +26,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -52,6 +51,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+footer a{
+    text-decoration: none;
+    color:#08c
+}
+
+.hero-text a{
+    text-decoration: none;
+    color:white;
+}
+
 
 .menu{
     display: grid;
@@ -101,12 +111,12 @@ table {
     color:white;
     text-decoration:none;
     text-align:center;
-    font:14px 'Roboto';
+    font-size:14px;
     line-height: 36px;
 }
 
 .menu a:hover{
-    -webkit-border-image: url('images/hover_1.png') 0 2 0 1 fill;
+    border-image: url('images/hover_1.png') 0 2 0 1 fill;
     background: url('images/hover_2.png') 0px 0px repeat-x, 
                 url('images/hover_3.png') 100% 0px repeat-y, 
                 url('images/hover_4.png') 0px 0px repeat-y, rgba(0, 0, 0, 0.4);
@@ -115,6 +125,7 @@ table {
 .menu>*:last-child{
     border-right:none;
 }
+
 a.logo:hover{
     background:url("images/icon.svg") 50% 5px no-repeat;
     border:none;
@@ -185,7 +196,7 @@ h1, h2, h3{
 }
 
 h1{
-    font-family: 'Montserrat Thin';
+    font-family: 'Montserrat Thin', sans-serif;
     font-size: 72px;
     letter-spacing: -3px;
     word-spacing: 5px;
@@ -199,7 +210,7 @@ h2{
     margin-top:18px;
     letter-spacing: normal;
     font-weight:100;
-    font-family: 'OpenSans Light';
+    font-family: 'OpenSans Light', sans-serif;
 }
 
 h3{
@@ -208,12 +219,7 @@ h3{
     margin-top:32px;
     letter-spacing: normal;
     font-weight:100;
-    font-family: 'OpenSans Light';
-}
-
-.hero-text a{
-    text-decoration: none;
-    color:white;
+    font-family: 'OpenSans Light', sans-serif;
 }
 
 .hero-text h3 a:hover{
@@ -261,12 +267,7 @@ footer .container{
     align-items: center;
     justify-items: start;
     font-size: 13px;
-    font-family: 'OpenSans Light';
-}
-
-footer a{
-    text-decoration: none;
-    color:#08c
+    font-family: 'OpenSans Light', sans-serif;
 }
 
 footer a:hover{
