@@ -2,7 +2,7 @@
 
  A clone of old version of the Apple website written in HTML, using CSS for styling.
 
-A clone of [Apple lod website](https://web.archive.org/web/20140301004610/http://www.apple.com/).
+A clone of [Apple old website](https://web.archive.org/web/20140301004610/http://www.apple.com/).
 
 ![screenshot](https://github.com/nurislam-ab/building_with_backgrounds_and_gradients/blob/features_branch/screenshot.jpg)
 
