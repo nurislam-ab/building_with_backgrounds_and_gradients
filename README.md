@@ -37,6 +37,7 @@ Contributions, issues and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/nurislam-ab/building_with_backgrounds_and_gradients/issues).
 
 # Authors   
+
 * Nurislam https://github.com/nurislam-ab
 
 ## Show your support
