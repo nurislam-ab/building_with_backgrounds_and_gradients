@@ -4,7 +4,7 @@
 
 A clone of [](https://web.archive.org/web/20140301004610/http://www.apple.com/).
 
-![screenshot]()
+![screenshot](https://github.com/nurislam-ab/building_with_backgrounds_and_gradients/blob/features_branch/screenshot.jpg)
 
 # What it does
 
