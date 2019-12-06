@@ -1,0 +1,297 @@
+@font-face { font-family: Roboto; src: url('fonts/Roboto/Roboto-Regular.ttf'); }
+@font-face { font-family: Montserrat; src: url('fonts/Montserrat/Montserrat-Regular.ttf');}
+@font-face { font-family: 'Montserrat Thin'; src: url('fonts/Montserrat/Montserrat-Thin.ttf');}
+@font-face { font-family: 'OpenSans Light'; src: url('fonts/Open_Sans/OpenSans-Light.ttf');}
+
+
+body{
+    margin:0;
+    font-family: Roboto, Arial, Helvetica, sans-serif !important;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.menu{
+    display: grid;
+    position: relative;
+    max-width: 980px;
+    height:36px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    margin:0 auto;
+    padding-right:20px;
+    top: 85px;
+    z-index: 9998 !important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+    border-radius: 4px;
+    background:-webkit-gradient(linear, 0 0, 0 100%, 
+    from(rgba(0, 0, 0, 0.2)), 
+    color-stop(0.05, rgba(0, 0, 0, 0)), 
+    color-stop(0.97, rgba(0, 0, 0, 0)), 
+    to(rgba(0, 0, 0, 0.45))), 
+    -webkit-gradient(linear, 0 0, 100% 0, 
+    from(rgba(0, 0, 0, 0.2)), 
+    color-stop(0.002, rgba(0, 0, 0, 0)), 
+    color-stop(0.998, rgba(0, 0, 0, 0)), 
+    to(rgba(0, 0, 0, 0.2))), 
+    url('images/back.png') 100% / 100% no-repeat, 
+    -webkit-gradient(linear, 0 100%, 0 0, 
+    from(rgb(102, 102, 102)), 
+    color-stop(0.5, rgb(94, 94, 94)), 
+    color-stop(0.5, rgb(112, 112, 112)), 
+    to(rgb(128, 128, 128)));
+}
+
+.logo{
+    width:100%;
+    height:36px;
+    background: url("images/icon.svg") 50% 5px no-repeat;
+}
+
+.menu>*{
+    -webkit-border-image: url('images/border.png') 0 2 0 1 fill;
+    text-decoration: none;
+    border-width: 0px 2px 0px 1px;
+    border-style: solid;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    font:14px 'Roboto';
+    line-height: 36px;
+}
+
+.menu a:hover{
+    -webkit-border-image: url('images/hover_1.png') 0 2 0 1 fill;
+    background: url('images/hover_2.png') 0px 0px repeat-x, 
+                url('images/hover_3.png') 100% 0px repeat-y, 
+                url('images/hover_4.png') 0px 0px repeat-y, rgba(0, 0, 0, 0.4);
+}
+
+.menu>*:last-child{
+    border-right:none;
+}
+a.logo:hover{
+    background:url("images/icon.svg") 50% 5px no-repeat;
+    border:none;
+}
+
+.menu input{
+    margin-left:10px;
+    background: rgba(255, 255, 255, 0.2);
+    background-image: url('images/search-icon.png');
+    background-size:10px 10px;
+    background-repeat:no-repeat;
+    background-position: 10px;
+    background-origin: border-box;
+    border:2px solid rgba(104, 104, 104, 1);
+    transition: width 500ms;
+    border-radius: 15px;
+    padding:4px;
+    width:90%;
+    -o-transition: background-color 0.3s, 0.3s;
+    -ms-transition: background-color 0.3s, 0.3s;
+    -moz-transition: background-color 0.3s, 0.3s;
+    -webkit-transition: background-color 0.3s, 0.3s;
+}
+
+.menu input:focus{
+    outline: none;
+    background-color: rgba(244, 244, 244, .5);
+    transition: width 500ms;
+}
+
+.hero-section{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:292px;
+    overflow: hidden;
+    height:570px;
+
+}
+
+.hero{
+    display: block;
+    right: auto;
+    margin-left: 0px;
+    background: url('images/hero.jpg') 50% 100% / 100% no-repeat;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-text{
+    display: block;
+    position: relative;
+    top:210px;
+    text-align: center;
+    color:white;
+    font-weight:100;
+}
+
+h1, h2, h3{
+    margin:auto;
+}
+
+h1{
+    font-family: 'Montserrat Thin';
+    font-size: 72px;
+    letter-spacing: -3px;
+    word-spacing: 5px;
+    font-weight: 100;
+}
+
+h2{
+    width:65%;
+    font-size: 38px;
+    line-height: 50px;
+    margin-top:18px;
+    letter-spacing: normal;
+    font-weight:100;
+    font-family: 'OpenSans Light';
+}
+
+h3{
+    font-size: 30px;
+    line-height: 50px;
+    margin-top:32px;
+    letter-spacing: normal;
+    font-weight:100;
+    font-family: 'OpenSans Light';
+}
+
+.hero-text a{
+    text-decoration: none;
+    color:white;
+}
+
+.hero-text h3 a:hover{
+    text-decoration: underline;
+}
+
+.hero-text a img{
+    position: absolute;
+    margin-left: 10px;
+}
+.container{
+    position: relative;
+    display: block;
+}
+
+.container h2{
+    display: none;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    justify-items: stretch;
+    justify-content: stretch;
+    margin-top: 538px;
+    grid-gap: 4px;
+}
+
+.products a img{
+    width:100%;
+}
+
+footer {
+    margin:auto;
+    width:100%;
+}
+
+footer .container{
+    display: grid;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:10px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: start;
+    font-size: 13px;
+    font-family: 'OpenSans Light';
+}
+
+footer a{
+    text-decoration: none;
+    color:#08c
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+.container .copyright{
+    margin:auto;
+}
+
+.container .copyright p{
+    line-height: 16px;
+    margin-bottom: 18px;
+    color:#515154;
+}
+
+.container nav{
+    justify-self: start;
+    align-self: flex-start;
+}
+
+.container nav a{
+    padding:0 8px;
+    border-right:1px solid #51515460;
+}
+
+.container nav a:last-child{
+    border:none;
+}
