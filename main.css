@@ -61,11 +61,10 @@ footer a{
 }
 
 .menu{
-    display: grid;
+    display: flex;
     position: relative;
     max-width: 980px;
     height:36px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     align-items: center;
     margin:0 auto;
     padding-right:20px;
@@ -92,7 +91,7 @@ footer a{
 }
 
 .logo{
-    width:100%;
+    /* width:100%; */
     height:36px;
     background: url("images/icon.svg") 50% 5px no-repeat;
 }
@@ -110,6 +109,7 @@ footer a{
     text-align:center;
     font-size:14px;
     line-height: 36px;
+    flex:1;
 }
 
 .menu>*:last-child{
@@ -170,7 +170,7 @@ footer a{
 .hero-text{
     display: block;
     position: relative;
-    top:210px;
+    top:155px;
     text-align: center;
     color:white;
     font-weight:100;
@@ -182,7 +182,7 @@ h1, h2, h3{
 
 h1{
     font-family: 'Montserrat Thin', sans-serif;
-    font-size: 72px;
+    font-size: 65px;
     letter-spacing: -3px;
     word-spacing: 5px;
     font-weight: 100;
@@ -190,18 +190,18 @@ h1{
 
 h2{
     width:65%;
-    font-size: 38px;
-    line-height: 50px;
-    margin-top:18px;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top:10px;
     letter-spacing: normal;
     font-weight:100;
     font-family: 'OpenSans Light', sans-serif;
 }
 
 h3{
-    font-size: 30px;
+    font-size: 24px;
     line-height: 50px;
-    margin-top:32px;
+    margin-top:22px;
     letter-spacing: normal;
     font-weight:100;
     font-family: 'OpenSans Light', sans-serif;
@@ -210,6 +210,7 @@ h3{
 .hero-text a img{
     position: absolute;
     margin-left: 10px;
+    height: 50px;
 }
 .container{
     position: relative;
@@ -221,8 +222,7 @@ h3{
 }
 
 .content{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     align-items: stretch;
     justify-items: stretch;
     justify-content: stretch;
@@ -240,7 +240,7 @@ footer {
 }
 
 footer .container{
-    display: grid;
+    display: flex;
     margin-top:30px;
     margin-bottom:30px;
     padding:10px;
