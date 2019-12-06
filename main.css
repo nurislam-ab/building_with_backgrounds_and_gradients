@@ -62,7 +62,6 @@ footer a{
     color:white;
 }
 
-
 .menu{
     display: grid;
     position: relative;
@@ -115,20 +114,8 @@ footer a{
     line-height: 36px;
 }
 
-.menu a:hover{
-    border-image: url('images/hover_1.png') 0 2 0 1 fill;
-    background: url('images/hover_2.png') 0px 0px repeat-x, 
-                url('images/hover_3.png') 100% 0px repeat-y, 
-                url('images/hover_4.png') 0px 0px repeat-y, rgba(0, 0, 0, 0.4);
-}
-
 .menu>*:last-child{
     border-right:none;
-}
-
-a.logo:hover{
-    background:url("images/icon.svg") 50% 5px no-repeat;
-    border:none;
 }
 
 .menu input{
@@ -222,10 +209,6 @@ h3{
     font-family: 'OpenSans Light', sans-serif;
 }
 
-.hero-text h3 a:hover{
-    text-decoration: underline;
-}
-
 .hero-text a img{
     position: absolute;
     margin-left: 10px;
@@ -270,9 +253,6 @@ footer .container{
     font-family: 'OpenSans Light', sans-serif;
 }
 
-footer a:hover{
-    text-decoration: underline;
-}
 .container .copyright{
     margin:auto;
 }
@@ -294,5 +274,25 @@ footer a:hover{
 }
 
 .container nav a:last-child{
+    border:none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.hero-text h3 a:hover{
+    text-decoration: underline;
+}
+
+.menu a:hover{
+    border-image: url('images/hover_1.png') 0 2 0 1 fill;
+    background: url('images/hover_2.png') 0px 0px repeat-x, 
+                url('images/hover_3.png') 100% 0px repeat-y, 
+                url('images/hover_4.png') 0px 0px repeat-y, rgba(0, 0, 0, 0.4);
+}
+
+a.logo:hover{
+    background:url("images/icon.svg") 50% 5px no-repeat;
     border:none;
 }
