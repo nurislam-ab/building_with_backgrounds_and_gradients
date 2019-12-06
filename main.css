@@ -33,9 +33,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -273,15 +271,7 @@ footer .container{
     border-right:1px solid #51515460;
 }
 
-.container nav a:last-child{
-    border:none;
-}
-
 footer a:hover{
-    text-decoration: underline;
-}
-
-.hero-text h3 a:hover{
     text-decoration: underline;
 }
 
@@ -290,6 +280,14 @@ footer a:hover{
     background: url('images/hover_2.png') 0px 0px repeat-x, 
                 url('images/hover_3.png') 100% 0px repeat-y, 
                 url('images/hover_4.png') 0px 0px repeat-y, rgba(0, 0, 0, 0.4);
+}
+
+.container nav a:last-child{
+    border:none;
+}
+
+.hero-text h3 a:hover{
+    text-decoration: underline;
 }
 
 a.logo:hover{
